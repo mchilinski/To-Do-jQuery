@@ -1,0 +1,112 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #52B3D9;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+container{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.container{
+	min-height: 200px;
+	width: 350px;
+	margin: 100px 0 0 0;
+	background-color: #ECF0F1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+h1{
+	margin: 20px 0 10px 0;
+}
+#todoList, #todoList2, #todoList3{
+	width: 100%;
+	min-height: 50px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.object{
+	width: 300px;
+	background-color: white;
+	margin-top: 8px;
+	padding: 10px 5px 10px 10px;
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	word-wrap: break-word;
+}
+.object:hover{
+	background-color: #EEEEEE;
+}
+.p{
+	width: 95%;
+}
+.btn-deleting{
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+	float: right;
+	font-size: 18px;
+	margin-right: 5px;
+	color: darkred;
+	opacity: 0.0;
+	transition: 0.5s;
+}
+.btn-deleting:hover{
+	color: red;
+}
+.object:hover .btn-deleting {
+	opacity:  1;
+}
+
+.btn-adding{
+	width: 100%;
+	font-size: 24px;
+	border: none;
+	background-color: transparent;
+	color: #87D37C;
+	cursor: pointer;
+	margin: 20px 0 30px 0;
+}
+.btn-adding:hover{
+	color: #26A65B;
+}
+#adding{
+	width: 90%;
+	margin: 20px 0 10px 0;
+	visibility: visible;
+	display: none;
+}
+.text-area{
+	padding: 10px 0 0 5px;
+	outline: none;
+	overflow: auto;
+	background-color: transparent;
+	resize: none;
+	border: none;
+	overflow: hidden;
+	font-size: 16px;
+	width: 250px;
+}
+.btn-confirm{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 4px 5px 5px 0;
+	float: right;
+	font-size: 24px;
+	color: #87D37C;
+}
+.btn-confirm:hover{
+	color: #26A65B;
+}
